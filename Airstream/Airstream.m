@@ -152,6 +152,7 @@ NSString *const ASDACPServiceType = @"_dacp._tcp";
   }
 
   dnssd_register_raop(dnssd, name, port, address, sizeof(address), 0);
+//  dnssd_register_airplay(dnssd, name, port, address, sizeof(address));
 
   self.running = YES;
 }

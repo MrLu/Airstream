@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08B6D41E253EE00A00F124E7 /* libshairplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D18FC1D01DC56AC200563F36 /* libshairplay.a */; };
 		D1524B3D1DC562AF009C5D23 /* Airstream.h in Headers */ = {isa = PBXBuildFile; fileRef = D1524B3B1DC562AF009C5D23 /* Airstream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D17552B51DC7018B002AE75A /* AirstreamRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = D17552B31DC7018B002AE75A /* AirstreamRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D17552B61DC7018B002AE75A /* AirstreamRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = D17552B41DC7018B002AE75A /* AirstreamRemote.m */; };
 		D18FC1B01DC5689C00563F36 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18FC1AF1DC5689C00563F36 /* AudioToolbox.framework */; };
-		D18FC1E31DC56BBF00563F36 /* libshairplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D18FC1D01DC56AC200563F36 /* libshairplay.a */; };
 		D18FC1EE1DC56E9A00563F36 /* Airstream.m in Sources */ = {isa = PBXBuildFile; fileRef = D18FC1ED1DC56E9A00563F36 /* Airstream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		08B6D41C253EDFE900F124E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18FC1B71DC5699D00563F36 /* shairplay.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BA16D61BB636AF002CB611;
+			remoteInfo = "shairplay-library";
+		};
 		D1084E791DC653460092F982 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1084E741DC653460092F982 /* Airstream iOS Example.xcodeproj */;
@@ -44,13 +51,6 @@
 			remoteGlobalIDString = C0C769B61BB0899B0085138B;
 			remoteInfo = "shairplay-application";
 		};
-		D18FC1E11DC56BAF00563F36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D18FC1B71DC5699D00563F36 /* shairplay.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C0BA16D61BB636AF002CB611;
-			remoteInfo = "shairplay-library";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18FC1E31DC56BBF00563F36 /* libshairplay.a in Frameworks */,
+				08B6D41E253EE00A00F124E7 /* libshairplay.a in Frameworks */,
 				D18FC1B01DC5689C00563F36 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D18FC1E21DC56BAF00563F36 /* PBXTargetDependency */,
+				08B6D41D253EDFE900F124E7 /* PBXTargetDependency */,
 			);
 			name = Airstream;
 			productName = Airstream;
@@ -217,6 +217,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D1524B2E1DC562AF009C5D23;
@@ -297,10 +298,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D18FC1E21DC56BAF00563F36 /* PBXTargetDependency */ = {
+		08B6D41D253EDFE900F124E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "shairplay-library";
-			targetProxy = D18FC1E11DC56BAF00563F36 /* PBXContainerItemProxy */;
+			targetProxy = 08B6D41C253EDFE900F124E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,7 +419,7 @@
 				);
 				INFOPLIST_FILE = Airstream/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path/Frameworks  @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path/Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = im.qas.Airstream;
@@ -449,7 +450,7 @@
 				);
 				INFOPLIST_FILE = Airstream/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path/Frameworks  @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path/Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = im.qas.Airstream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
